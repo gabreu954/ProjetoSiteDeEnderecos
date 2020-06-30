@@ -8,7 +8,7 @@ $obj =  json_decode($data);
 
 if(!empty($data)){	
 	try {
- 		$conteudoControl = new conteudoControl();
+ 		$conteudoControl = new ConteudoControl();
  		$conteudoControl->insert($obj);
  		http_response_code(200);
  		echo json_encode($obj);
