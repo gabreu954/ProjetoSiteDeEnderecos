@@ -23,6 +23,7 @@ window.onload = function () {
                     numero.innerHTML = endereco.numero;
                     bairro.innerHTML = endereco.bairro;
                     cidade.innerHTML = endereco.cidade;
+                    
                 }
                 )
 
@@ -32,7 +33,7 @@ window.onload = function () {
 
 }
 function enviarForm() {
-    var form = document.getElementById('cadastro');
+    var form = document.getElementById('conteudo');
     var data = {};
     data['nome_estab'] = form.nome_estab.value;
     data['estab'] = form.estab.value;
@@ -41,7 +42,7 @@ function enviarForm() {
     data['bairro'] = form.bairro.value;
     data['cidade'] = form.cidade.value;
     console.log(JSON.stringify(data));
-    fetch('http://localhost/EnderecosBackEnd/enderecos', {
+    fetch('http://localhost/EnderecosBackEnd/conteudo', {
         method: 'POST',
         body: JSON.stringify(data)
     })
