@@ -1,8 +1,3 @@
-
-
-
-
-/*
 function enviarForm() {
     var conteudo = document.getElementById('conteudo');
     var data = {};
@@ -31,4 +26,3 @@ function enviarForm() {
 var submitBtn = document.querySelector('button');
 
 submitBtn.addEventListener('submit', enviarForm);
-*/
