@@ -4,7 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" type="text/css" href="style/cadastro.css">
-        <script src="scripts js/script2.js"></script>
+        <script src="scripts/script2.js"></script>
         <title>Cadastro</title>
     </head>
 
@@ -13,29 +13,31 @@
         <form>
 
             <div class=container>
-
+                <!--method="post" action="#" onsubmit="return enviarForm()"-->
                 <h1>Cadastro</h1>
+
                 <form id="conteudo" method="post" action="#" onsubmit="return enviarForm()">
                     <label>Nome:</label><br>
-                    <input type="text" name="nome_estab" maxlength="40"><br>
+                    <input type="text" name="nome_estab" id="nome_estab" maxlength="40"><br>
 
                     <label>Tipo:</label><br>
-                    <input type="text" name="estab" maxlength="40"><br>
+                    <input type="text" name="estab" id="estab" maxlength="40"><br>
 
                     <label>Rua:</label><br>
-                    <input type="text" name="rua" maxlength="40"><br>
+                    <input type="text" name="rua" id="rua" maxlength="40"><br>
 
                     <label>Número:</label><br>
-                    <input type="text" name="numero" maxlength="40"><br>
+                    <input type="text" name="numero" id="numero" maxlength="40"><br>
 
                     <label>Bairro:</label><br>
-                    <input type="text" name="bairro" maxlength="40"><br>
+                    <input type="text" name="bairro" id="bairro" maxlength="40"><br>
 
                     <label>Cidade:</label><br>
-                    <input type="text" name="cidade" maxlength="40"><br>
+                    <input type="text" name="cidade" id="cidade" maxlength="40"><br>
                     <br>
                     <button type="submit">Enviar</button>
                 </form>
+                
             </div>
 
         </form>
